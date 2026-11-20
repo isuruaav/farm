@@ -1,0 +1,7 @@
+/.cache/
+/node_modules/
+/storage/*
+!/storage/.htaccess
+/tests/runtime-*/
+__pycache__/
+*.log

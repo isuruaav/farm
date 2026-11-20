@@ -1,0 +1,23 @@
+{
+  "about": {"asset":"agriculture-vision","alt":"Illustrative tropical fields, greenhouse and agricultural buildings in Sri Lanka","caption":"Rooted in Sri Lankan agriculture"},
+  "products": {"asset":"catalog","alt":"Eggs, oyster mushrooms, grains, feed pellets, a seedling and water arranged for the agricultural product catalog","caption":"Explore. Select. Enquire."},
+  "industries": {"asset":"agriculture-vision","alt":"Illustrative connected agricultural landscape with fields, a greenhouse and processing buildings","caption":"Agriculture, industry and possibility"},
+  "export": {"asset":"export-logistics","alt":"Illustrative container vessel, cranes and refrigerated cargo containers at a tropical seaport","caption":"Connecting products with wider markets"},
+  "investment": {"asset":"investment-planning","alt":"Illustrative agricultural development discussion with business partners and an agronomist","caption":"Planning the next opportunity together"},
+  "partners": {"asset":"business-partnerships","alt":"Illustrative agricultural business partners shaking hands beside seedlings in a greenhouse","caption":"Good partnerships help possibilities grow"},
+  "contact": {"asset":"customer-support","alt":"Illustrative agricultural business inquiry desk with an adviser, laptop and product samples","caption":"Your next conversation starts here"},
+  "faq": {"asset":"customer-support","alt":"Illustrative adviser ready to help with agricultural product and partnership inquiries","caption":"Helpful answers. Clear next steps."},
+  "gallery": {"asset":"growing-media","alt":"Illustrative close view of seedlings, potting materials and a green nursery","caption":"A closer look at the portfolio"},
+  "news": {"asset":"agriculture-journal","alt":"Illustrative agronomist recording observations beside young plants in a greenhouse","caption":"Ideas from agriculture and industry"},
+  "delivery-returns": {"asset":"delivery-care","alt":"Illustrative careful inspection and packing of egg cartons and agricultural goods for delivery","caption":"Care at every stage of the journey"},
+  "privacy-policy": {"asset":"business-documents","alt":"Illustrative closed business folder, secure laptop and organized documents on a private office desk","caption":"Information handled with care"},
+  "terms": {"asset":"business-documents","alt":"Illustrative business documents and a closed folder prepared for a commercial discussion","caption":"Clarity before the next step"},
+  "industry-poultry": {"asset":"poultry-farming","alt":"Illustrative brown laying hens in a bright ventilated barn with fresh eggs in the foreground","caption":"Poultry and fresh egg possibilities"},
+  "industry-feed": {"asset":"animal-feed","alt":"Illustrative animal feed pellets and grains beside clean feed manufacturing equipment","caption":"Balanced feed. Practical farm supply."},
+  "industry-egg-trays": {"asset":"recycled-egg-trays","alt":"Illustrative stacks of recycled molded pulp egg trays in a packaging workshop","caption":"Another purpose for recycled paper"},
+  "industry-mushrooms": {"asset":"mushroom-cultivation","alt":"Illustrative oyster mushroom clusters growing on racks in a controlled cultivation room","caption":"Cultivating fresh possibilities"},
+  "industry-egg-processing": {"asset":"egg-processing","alt":"Illustrative egg powder and liquid egg samples beside stainless food processing equipment","caption":"Value beyond the shell"},
+  "industry-fertilizer": {"asset":"organic-fertilizer","alt":"Illustrative mature compost, organic fertilizer pellets and a young plant at a compost facility","caption":"Recovering value. Supporting growth."},
+  "industry-growing-media": {"asset":"growing-media","alt":"Illustrative seedlings, coco coir and rich potting mix on a nursery workbench","caption":"Better foundations for growing"},
+  "industry-water-tech": {"asset":"water-purification","alt":"Illustrative clean reverse osmosis filtration equipment, membrane cartridges and drinking water","caption":"Water technology with a clear purpose"}
+}

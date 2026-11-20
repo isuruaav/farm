@@ -1,0 +1,38 @@
+/* Contextual photography shared by the public page introductions. */
+.page-intro--visual { background:linear-gradient(120deg,#0c2b22,#123f32 62%,#1b4c3a); }
+.page-intro--visual::after { right:-200px; opacity:.6; }
+.page-intro-layout { display:grid; grid-template-columns:minmax(0,1.08fr) minmax(0,1fr); align-items:center; gap:64px; position:relative; z-index:1; }
+.page-intro-copy { min-width:0; }
+.page-intro--visual .page-intro-copy h1 { font-size:clamp(2rem,3.45vw,3.25rem); max-width:660px; text-wrap:balance; }
+.page-intro--visual .page-intro-copy>p { font-size:1rem; line-height:1.85; color:#d4e3d7; max-width:620px; margin-top:18px; }
+.page-intro--visual .page-intro-copy>.brand-eyebrow { color:#e5ce91; font-size:.75rem; margin-top:0; }
+.page-intro-visual { margin:0; min-width:0; position:relative; }
+.page-intro-visual picture { display:block; aspect-ratio:3/2; overflow:hidden; border-radius:48px 12px 12px 12px; border:1px solid #ffffff25; background:#173c2b; box-shadow:0 18px 45px #04170f40; }
+.page-intro-visual img { width:100%; height:100%; display:block; object-fit:cover; }
+.page-intro-visual figcaption { display:flex; align-items:center; flex-wrap:wrap; gap:10px; margin-top:16px; color:#e5ce91; font-size:.8125rem; line-height:1.6; }
+.intro-visual-line { display:block; width:24px; height:1px; background:#e5ce91; flex-shrink:0; }
+.intro-visual-note { margin-left:auto; color:#bdcfc2; font-size:.75rem; }
+.catalog-section-story { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:42px; margin-bottom:36px; padding:28px; border:1px solid #dce5d8; border-radius:16px; background:#fff; }
+.catalog-section-story>img { display:block; width:100%; aspect-ratio:3/2; object-fit:cover; border-radius:10px; }
+.catalog-section-story .section-heading { margin:0; }
+.catalog-section-story h2 { margin:16px 0; }
+.catalog-section-story p { max-width:430px; }
+.section-context-photo { display:block; width:100%; aspect-ratio:3/2; object-fit:cover; border-radius:12px; margin:0 0 28px; }
+.investment-project-photo { aspect-ratio:2/1; margin-bottom:24px; }
+@media(max-width:1050px) {
+  .page-intro-layout { gap:35px; }
+  .page-intro--visual .page-intro-copy h1 { font-size:2.45rem; }
+  .intro-visual-note { margin-left:34px; flex-basis:100%; }
+}
+@media(max-width:760px) {
+  .page-intro-layout,.catalog-section-story { grid-template-columns:1fr; gap:30px; }
+  .page-intro--visual .page-intro-copy h1 { font-size:clamp(2rem,7.5vw,2.8rem); }
+  .page-intro-visual { width:100%; max-width:600px; }
+  .page-intro-visual picture { border-top-left-radius:32px; }
+  .intro-visual-note { margin-left:auto; flex-basis:auto; }
+  .catalog-section-story { padding:20px; }
+}
+@media(max-width:420px) {
+  .page-intro-visual figcaption { gap:8px; font-size:.75rem; }
+  .intro-visual-note { margin-left:32px; flex-basis:100%; }
+}

@@ -1,0 +1,26 @@
+DirectoryIndex index.php
+Options -Indexes
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(?:storage|includes|views|data|tests|tools|node_modules|__pycache__)(?:/|$) - [F,L,NC]
+RewriteRule (^|/)\. - [F,L]
+RewriteRule ^sitemap\.xml$ sitemap.php [END]
+RewriteRule ^robots\.txt$ robots.php [END]
+RewriteCond %{REQUEST_FILENAME} ^(.+)\.html$
+RewriteCond %1.php -f
+RewriteCond %{REQUEST_URI} ^(.+)\.html$
+RewriteRule ^[a-z0-9-]+\.html$ %1.php [R=301,L,NE]
+</IfModule>
+
+<FilesMatch "^(config\.php|router\.php|.*\.(?:py|sqlite|db|zip|json|log|md|cjs))$">
+Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+<FilesMatch "\.(?:css|js|woff2?|jpg|jpeg|png|svg|webp)$">
+Header set Cache-Control "public, max-age=86400"
+Header set X-Content-Type-Options "nosniff"
+</FilesMatch>
+</IfModule>

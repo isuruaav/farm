@@ -1,0 +1,211 @@
+[
+  {
+    "slug": "poultry",
+    "category": "poultry",
+    "formValue": "ind_poultry",
+    "investmentValue": "p1",
+    "name": "Modern Smart Layer Poultry Farm",
+    "shortName": "Poultry & Eggs",
+    "description": "A planned poultry project combining modern layer housing, graded eggs and supply opportunities for retailers, hospitality and food producers.",
+    "focus": "Fresh eggs · Retail packs · Bulk supply",
+    "target": "125,000 layers initially, with a phased ambition of 2.5 million.",
+    "icon": "fa-egg",
+    "image": "assets/images/sections/poultry-farming.webp",
+    "status": "planned",
+    "highlights": [
+      "Fresh table eggs",
+      "Cleaned and graded eggs",
+      "Size-sorted retail formats",
+      "6, 12, 15 and 30-egg packs",
+      "Hospitality and food manufacturing inquiries",
+      "Bulk supply and distribution requirements"
+    ],
+    "process": []
+  },
+  {
+    "slug": "feed",
+    "category": "feed",
+    "formValue": "ind_feed",
+    "investmentValue": "p2",
+    "name": "Animal Feed Manufacturing",
+    "shortName": "Animal Feed",
+    "description": "Balanced feed solutions for poultry, dairy cattle, goats, sheep and aquaculture, supported by a proposed twelve-stage manufacturing process.",
+    "focus": "Poultry feed · Livestock feed · Fish pellets",
+    "target": "A twelve-stage process from raw material sourcing to distribution.",
+    "icon": "fa-wheat-awn",
+    "image": "assets/images/sections/animal-feed.webp",
+    "status": "planned",
+    "highlights": [
+      "Chick starter and grower feeds",
+      "Layer and broiler feeds",
+      "Dairy cattle feed",
+      "Goat and sheep feed",
+      "Aquaculture feeds",
+      "Custom farm supply requirements"
+    ],
+    "process": [
+      "Raw material sourcing",
+      "Raw material inspection",
+      "Cleaning",
+      "Grinding",
+      "Nutritional formulation",
+      "Mixing",
+      "Pelletizing",
+      "Cooling",
+      "Quality inspection",
+      "Packaging",
+      "Storage",
+      "Distribution"
+    ]
+  },
+  {
+    "slug": "egg-trays",
+    "category": "trays",
+    "formValue": "ind_trays",
+    "investmentValue": "p3",
+    "name": "Recycled Paper Egg Tray Manufacturing",
+    "shortName": "Sustainable Packaging",
+    "description": "A recycled-paper packaging project focused on molded pulp egg trays, protective transport formats and custom packaging requirements.",
+    "focus": "6, 12, 15 & 30-egg formats · Custom packaging",
+    "target": "Recycled paper inputs and an eight-stage production process.",
+    "icon": "fa-recycle",
+    "image": "assets/images/sections/recycled-egg-trays.webp",
+    "status": "planned",
+    "highlights": [
+      "6, 12, 15 and 30-egg formats",
+      "Protective transport trays",
+      "Recycled-paper inputs",
+      "Custom packaging quotations"
+    ],
+    "process": [
+      "Waste paper collection",
+      "Paper sorting",
+      "Pulp preparation",
+      "Molding",
+      "Water extraction",
+      "Drying",
+      "Quality inspection",
+      "Storage and distribution"
+    ]
+  },
+  {
+    "slug": "mushrooms",
+    "category": "mushrooms",
+    "formValue": "ind_mushrooms",
+    "investmentValue": "p4",
+    "name": "Smart Mushroom Farming",
+    "shortName": "Mushroom Cultivation",
+    "description": "A proposed controlled-environment cultivation project for fresh, dried and value-added mushrooms, connecting local supply with export opportunities.",
+    "focus": "Oyster · Shiitake · Fresh & dried formats",
+    "target": "A planned 5–10 acre cultivation concept.",
+    "icon": "fa-seedling",
+    "image": "assets/images/sections/mushroom-cultivation.webp",
+    "status": "planned",
+    "highlights": [
+      "Oyster mushrooms",
+      "Shiitake and button mushrooms",
+      "Fresh, dried and packaged formats",
+      "Value-added product inquiries"
+    ],
+    "process": [],
+    "technical": [
+      "Temperature management",
+      "Humidity control",
+      "Ventilation management",
+      "IoT-based monitoring concepts",
+      "Controlled cultivation rooms",
+      "Hygiene and sanitation systems",
+      "Cold-chain storage requirements"
+    ]
+  },
+  {
+    "slug": "egg-processing",
+    "category": "egg-powder",
+    "formValue": "ind_powder",
+    "investmentValue": "p5",
+    "name": "Egg Processing & Value-Added Products",
+    "shortName": "Egg Processing",
+    "description": "A value-addition project exploring whole egg, yolk and albumen powders alongside pasteurized liquid products for food manufacturing.",
+    "focus": "Egg powders · Liquid egg · Food ingredients",
+    "target": "Ingredient supply opportunities for bakeries and food manufacturers.",
+    "icon": "fa-industry",
+    "image": "assets/images/sections/egg-processing.webp",
+    "status": "planned",
+    "highlights": [
+      "Whole egg powder",
+      "Egg yolk powder",
+      "Egg white powder",
+      "Liquid egg products",
+      "Food manufacturing ingredients",
+      "Sample and bulk quotation inquiries"
+    ],
+    "process": []
+  },
+  {
+    "slug": "fertilizer",
+    "category": "fertilizer",
+    "formValue": "ind_fertilizer",
+    "investmentValue": "p6",
+    "name": "Organic Fertilizer Manufacturing",
+    "shortName": "Organic Fertilizer",
+    "description": "An organic fertilizer concept connecting agricultural by-products with compost, processed poultry manure and enriched growing solutions.",
+    "focus": "Compost · Poultry fertilizer · Enriched blends",
+    "target": "A circular approach to agricultural material recovery.",
+    "icon": "fa-leaf",
+    "image": "assets/images/sections/organic-fertilizer.webp",
+    "status": "planned",
+    "highlights": [
+      "Organic compost",
+      "Processed poultry fertilizer",
+      "Organic fertilizer blends",
+      "5kg, 10kg, 20kg and bulk formats"
+    ],
+    "process": []
+  },
+  {
+    "slug": "growing-media",
+    "category": "growing-media",
+    "formValue": "ind_media",
+    "investmentValue": "p7",
+    "name": "Growing Media & Planting Solutions",
+    "shortName": "Growing Media",
+    "description": "Specialized growing media for seed starting, potting, nurseries and greenhouse applications, with product formats tailored to buyer requirements.",
+    "focus": "Seed starting · Potting mixes · Nursery substrates",
+    "target": "Solutions for home growers, nurseries and commercial horticulture.",
+    "icon": "fa-spa",
+    "image": "assets/images/sections/growing-media.webp",
+    "status": "planned",
+    "highlights": [
+      "Seed starting mix",
+      "Potting mix",
+      "Nursery growing media",
+      "Greenhouse growing media",
+      "Organic growing solutions",
+      "Specialized mix requirements"
+    ],
+    "process": []
+  },
+  {
+    "slug": "water-tech",
+    "category": "water-tech",
+    "formValue": "ind_water",
+    "investmentValue": "p8",
+    "name": "Smart Water Filtration & Purification",
+    "shortName": "Water Technology",
+    "description": "A water technology project exploring domestic, commercial and industrial filtration solutions and South Korean technology partnership opportunities.",
+    "focus": "Domestic filtration · Commercial RO · Industry",
+    "target": "Technology and distribution partnerships for water purification.",
+    "icon": "fa-droplet",
+    "image": "assets/images/sections/water-purification.webp",
+    "status": "planned",
+    "highlights": [
+      "Smart water purifier concepts",
+      "Domestic filtration",
+      "Commercial purification systems",
+      "Industrial filtration",
+      "Replacement cartridges and accessories",
+      "Technology and distribution partnerships"
+    ],
+    "process": []
+  }
+]

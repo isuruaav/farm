@@ -1,0 +1,51 @@
+/* Tailwind v4: scan only live application templates, never backups or generators. */
+@import "tailwindcss" source(none);
+@import "./styles.css" layer(components);
+@import "./admin.css" layer(components);
+@import "./design.css" layer(components);
+@import "./imagery.css" layer(components);
+
+@source "../../views";
+@source "../../includes";
+@source "../../admin";
+@source "../../assets/js";
+@source "../../request-result.php";
+
+@theme {
+  --color-forest: #123f32;
+  --color-forest-dark: #0c2b22;
+  --color-forest-light: #1b5947;
+  --color-emerald: #1d6248;
+  --color-emerald-dark: #144633;
+  --color-emerald-light: #288562;
+  --color-gold: #ebc975;
+  --color-gold-dark: #c9a54a;
+  --color-gold-light: #f5de9f;
+  --color-warmwhite: #f4f8f2;
+  --color-charcoal: #1b2c26;
+  --color-waterblue: #14516a;
+  --color-waterblue-dark: #0e394b;
+  --color-waterblue-light: #217b9f;
+
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+  --text-2xs: .75rem;
+  --text-2xs--line-height: 1.55;
+  --text-xs: .875rem;
+  --text-xs--line-height: 1.65;
+  --text-sm: 1rem;
+  --text-sm--line-height: 1.6;
+}
+
+@layer base {
+  /* Keep the existing neutral borders when no explicit border color is supplied. */
+  *, ::before, ::after, ::backdrop {
+    border-color: var(--color-gray-200, #e5e7eb);
+  }
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  input::placeholder, textarea::placeholder {
+    color: var(--color-gray-400);
+  }
+}

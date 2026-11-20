@@ -1,0 +1,312 @@
+{
+  "contact": {
+    "name": {
+      "required": true,
+      "type": "text",
+      "max": 180
+    },
+    "company": {
+      "required": false,
+      "type": "text",
+      "max": 180
+    },
+    "country": {
+      "required": true,
+      "type": "text",
+      "max": 180
+    },
+    "email": {
+      "required": true,
+      "type": "email",
+      "max": 254
+    },
+    "phone": {
+      "required": true,
+      "type": "tel",
+      "max": 32
+    },
+    "inquiry_type": {
+      "required": true,
+      "type": "text",
+      "max": 180,
+      "options": [
+        "",
+        "retail_order",
+        "wholesale_quote",
+        "hotel_supermarket",
+        "export_inquiry",
+        "investment_eoi",
+        "partner_registration",
+        "other"
+      ]
+    },
+    "industry": {
+      "required": true,
+      "type": "text",
+      "max": 180,
+      "options": [
+        "",
+        "ind_poultry",
+        "ind_feed",
+        "ind_trays",
+        "ind_mushrooms",
+        "ind_powder",
+        "ind_fertilizer",
+        "ind_media",
+        "ind_water"
+      ]
+    },
+    "message": {
+      "required": true,
+      "type": "text",
+      "max": 5000
+    }
+  },
+  "export": {
+    "name": {
+      "required": true,
+      "type": "text",
+      "max": 180
+    },
+    "company": {
+      "required": true,
+      "type": "text",
+      "max": 180
+    },
+    "country": {
+      "required": true,
+      "type": "text",
+      "max": 180
+    },
+    "port": {
+      "required": false,
+      "type": "text",
+      "max": 180
+    },
+    "email": {
+      "required": true,
+      "type": "email",
+      "max": 254
+    },
+    "phone": {
+      "required": true,
+      "type": "tel",
+      "max": 32
+    },
+    "industry": {
+      "required": true,
+      "type": "text",
+      "max": 180,
+      "options": [
+        "",
+        "shiitake_oyster",
+        "egg_powder",
+        "albumen_powder",
+        "egg_trays",
+        "fresh_table_eggs",
+        "water_purifiers"
+      ]
+    },
+    "quantity": {
+      "required": false,
+      "type": "text",
+      "max": 180
+    },
+    "sample": {
+      "required": false,
+      "type": "checkbox",
+      "max": 180
+    },
+    "message": {
+      "required": false,
+      "type": "text",
+      "max": 5000
+    }
+  },
+  "investment": {
+    "name": {
+      "required": true,
+      "type": "text",
+      "max": 180
+    },
+    "company": {
+      "required": false,
+      "type": "text",
+      "max": 180
+    },
+    "country": {
+      "required": true,
+      "type": "text",
+      "max": 180
+    },
+    "phone": {
+      "required": true,
+      "type": "tel",
+      "max": 32
+    },
+    "email": {
+      "required": true,
+      "type": "email",
+      "max": 254
+    },
+    "industry": {
+      "required": true,
+      "type": "text",
+      "max": 180,
+      "options": [
+        "",
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "all"
+      ]
+    },
+    "investment_range": {
+      "required": true,
+      "type": "text",
+      "max": 180,
+      "options": [
+        "joint_venture",
+        "equity",
+        "tech_transfer",
+        "outgrower",
+        "debt"
+      ]
+    },
+    "partnership_type": {
+      "required": false,
+      "type": "text",
+      "max": 180,
+      "options": [
+        "bracket_1",
+        "bracket_2",
+        "bracket_3",
+        "bracket_4"
+      ]
+    },
+    "message": {
+      "required": false,
+      "type": "text",
+      "max": 5000
+    }
+  },
+  "partner": {
+    "name": {
+      "required": true,
+      "type": "text",
+      "max": 180
+    },
+    "company": {
+      "required": true,
+      "type": "text",
+      "max": 180
+    },
+    "partner_type": {
+      "required": true,
+      "type": "text",
+      "max": 180,
+      "options": [
+        "",
+        "wholesale",
+        "retail",
+        "hospitality",
+        "export_import",
+        "sales_agent",
+        "distributor",
+        "tech_partner"
+      ]
+    },
+    "country": {
+      "required": true,
+      "type": "text",
+      "max": 180
+    },
+    "email": {
+      "required": true,
+      "type": "email",
+      "max": 254
+    },
+    "phone": {
+      "required": true,
+      "type": "tel",
+      "max": 32
+    },
+    "address": {
+      "required": true,
+      "type": "text",
+      "max": 300
+    },
+    "industry": {
+      "required": true,
+      "type": "text",
+      "max": 180,
+      "options": [
+        "eggs_poultry",
+        "feed",
+        "egg_trays",
+        "mushrooms",
+        "egg_powder",
+        "bio_fertilizer",
+        "growing_media",
+        "water_purification",
+        "all_products"
+      ]
+    },
+    "experience": {
+      "required": true,
+      "type": "text",
+      "max": 180,
+      "options": [
+        "authorized_dealer",
+        "direct_client",
+        "logistics_partner",
+        "outgrower",
+        "franchise"
+      ]
+    },
+    "message": {
+      "required": false,
+      "type": "text",
+      "max": 5000
+    }
+  },
+  "sector": {
+    "industry": {
+      "required": true,
+      "max": 40,
+      "options": [
+        "ind_poultry",
+        "ind_feed",
+        "ind_trays",
+        "ind_mushrooms",
+        "ind_powder",
+        "ind_fertilizer",
+        "ind_media",
+        "ind_water"
+      ]
+    },
+    "name": {
+      "required": true,
+      "max": 180
+    },
+    "phone": {
+      "required": true,
+      "type": "tel",
+      "max": 32
+    },
+    "email": {
+      "required": false,
+      "type": "email",
+      "max": 254
+    },
+    "message": {
+      "required": true,
+      "max": 5000
+    }
+  }
+}
