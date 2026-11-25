@@ -1,22 +1,22 @@
 <main id="main-content"><div class="page-intro page-intro--visual"><div class="page-intro-layout site-container"><div class="page-intro-copy"><p class="brand-eyebrow">INVESTMENT &amp; STRATEGIC PARTNERSHIPS</p><h1>Build with purpose.<br>Grow with a shared vision.</h1><p>Explore eight project concepts spanning agriculture, food, packaging and water technology. Share your interests and begin a discussion with our team.</p></div><?php require APP_ROOT . "/includes/page-intro-visual.php"; ?></div></div>
 <section class="section-space"><div class="site-container"><div class="journal-intro"><p>The portfolio presents planned opportunities and project targets. Capacity figures are planning ambitions, not confirmed operating capacity or investment returns. Project details, funding requirements and agreements are discussed individually.</p></div><div class="investment-grid">
 <?php foreach ($sectors as $sector): ?><article class="investment-card"><img class="section-context-photo investment-project-photo" src="<?= e(str_replace(".webp", "-768.webp", $sector["image"])) ?>" alt="Illustrative <?= e(strtolower($sector["shortName"])) ?> project theme" width="768" height="512" loading="lazy" decoding="async"><div class="investment-card-top"><i class="fas <?= e($sector['icon']) ?>" aria-hidden="true"></i><?= project_status($sector['status']) ?></div><h2><?= e($sector['name']) ?></h2><p><?= e($sector['description']) ?></p><div class="investment-target"><?= e($sector['target']) ?></div><div class="investment-actions"><a class="btn-primary" href="#invest-form-section" data-investment-project="<?= e($sector['investmentValue']) ?>">Express interest</a><a class="text-link" href="industry-<?= e($sector['slug']) ?>.php">Project overview</a></div></article><?php endforeach; ?></div>
-<div id="invest-form-section" class="bg-forest-dark text-white p-8 lg:p-12 rounded-3xl border-2 border-gold/40 shadow-2xl">
+<div id="invest-form-section" class="inquiry-surface p-8 lg:p-12 rounded-3xl border border-emerald-100 shadow-sm">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div class="lg:col-span-5 space-y-4">
-              <span class="text-xs font-bold text-gold uppercase tracking-wider bg-gold/10 px-3 py-1 rounded-full border border-gold/30">
+              <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider bg-gold/10 px-3 py-1 rounded-full border border-gold/30">
                 Direct Expression of Interest (EOI)
               </span>
-              <h2 class="text-3xl font-black text-white font-heading">
+              <h2 class="text-3xl font-black text-forest font-heading">
                 Discuss an investment or partnership idea
               </h2>
-              <p class="text-base sm:text-sm text-emerald-100/90 leading-relaxed">
+              <p class="text-base sm:text-sm text-gray-600 leading-relaxed">
                 Whether you represent an institutional private equity fund, an agribusiness group, an angel investor syndicate, or an international joint venture partner, FOREST LANKA welcomes strategic engagement.
               </p>
-              <div class="space-y-2 text-xs text-emerald-200 pt-2">
-                <div class="flex items-center gap-2"><i class="fas fa-check-circle text-gold"></i> Discuss project information</div>
-                <div class="flex items-center gap-2"><i class="fas fa-check-circle text-gold"></i> Share partnership requirements</div>
-                <div class="flex items-center gap-2"><i class="fas fa-check-circle text-gold"></i> Arrange a follow-up conversation</div>
+              <div class="space-y-2 text-xs text-emerald-800 pt-2">
+                <div class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-700"></i> Discuss project information</div>
+                <div class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-700"></i> Share partnership requirements</div>
+                <div class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-700"></i> Arrange a follow-up conversation</div>
               </div>
             </div>
 

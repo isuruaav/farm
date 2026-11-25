@@ -10,6 +10,7 @@
     "build": "node tools/build-assets.mjs",
     "build:css": "tailwindcss -i assets/css/tailwind-input.css -o assets/css/utilities.css --minify",
     "watch:css": "tailwindcss -i assets/css/tailwind-input.css -o assets/css/utilities.css --watch",
+    "screenshots": "node tools/screenshots.mjs",
     "test:styles": "node tests/styles.test.mjs",
     "test:cart": "node tests/cart.test.cjs",
     "test:experience": "node tests/experience.test.cjs",

@@ -1,7 +1,7 @@
 <main id="main-content">
-    <div class="bg-forest-dark text-white py-16 relative page-intro page-intro--visual">
+    <div class="py-16 relative page-intro page-intro--visual">
       <div class="page-intro-layout max-w-7xl mx-auto px-4 relative z-10"><div class="page-intro-copy">
-        <div class="text-xs text-gold uppercase tracking-wider font-semibold mb-2 flex items-center gap-2">
+        <div class="text-xs text-emerald-700 uppercase tracking-wider font-semibold mb-2 flex items-center gap-2">
           <a href="index.php" class="hover:underline">Home</a>
           <i class="fas fa-chevron-right text-2xs"></i>
           <span>Product Catalog</span>
@@ -10,7 +10,7 @@
           <span>Product Catalog & Commercial Orders</span>
           
         </h1>
-        <p class="text-base sm:text-base text-emerald-100 max-w-3xl leading-relaxed">
+        <p class="text-base sm:text-base text-gray-600 max-w-3xl leading-relaxed">
           <span>
             Explore products across our eight industry sectors. View pack formats and indicative prices, then request a quotation for confirmed specifications, availability and delivery.
           </span>
@@ -25,7 +25,7 @@
         <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
           
           <div class="flex flex-wrap gap-1.5 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 text-xs">
-            <button onclick="filterCategory('all', this)" class="prod-cat-btn px-3 py-1.5 rounded-full font-bold bg-forest text-gold shadow-xs">All Products</button>
+            <button onclick="filterCategory('all', this)" class="prod-cat-btn px-3 py-1.5 rounded-full font-bold bg-emerald-100 text-forest shadow-xs">All Products</button>
             <button onclick="filterCategory('poultry', this)" class="prod-cat-btn px-3 py-1.5 rounded-full font-semibold bg-gray-100 hover:bg-emerald-50 text-gray-700">1. Poultry & Eggs</button>
             <button onclick="filterCategory('feed', this)" class="prod-cat-btn px-3 py-1.5 rounded-full font-semibold bg-gray-100 hover:bg-emerald-50 text-gray-700">2. Animal Feed</button>
             <button onclick="filterCategory('trays', this)" class="prod-cat-btn px-3 py-1.5 rounded-full font-semibold bg-gray-100 hover:bg-emerald-50 text-gray-700">3. Egg Trays</button>

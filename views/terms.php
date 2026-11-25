@@ -1,8 +1,8 @@
 <main id="main-content">
-    <div class="bg-forest-dark text-white py-16 relative page-intro page-intro--visual">
+    <div class="py-16 relative page-intro page-intro--visual">
       <div class="page-intro-layout max-w-7xl mx-auto px-4 relative z-10"><div class="page-intro-copy">
         <h1>Terms and Conditions</h1>
-        <p class="text-base sm:text-base text-emerald-100 max-w-3xl leading-relaxed">
+        <p class="text-base sm:text-base text-gray-600 max-w-3xl leading-relaxed">
           Information about website inquiries, quotation requests and commercial arrangements.
         </p>
       </div><?php require APP_ROOT . "/includes/page-intro-visual.php"; ?></div>

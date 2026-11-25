@@ -9,9 +9,9 @@
         <h1><?php
           $headline = e($site['headline']);
           if (str_contains($headline, 'Building what’s next')) {
-            echo str_replace('Building what’s next', '<span class="gradient-text-gold">Building what’s next</span>', $headline);
+            echo str_replace('Building what’s next', '<span class="gradient-text-amber-800">Building what’s next</span>', $headline);
           } elseif (str_contains($headline, 'what’s next')) {
-            echo str_replace('what’s next', '<span class="gradient-text-gold">what’s next</span>', $headline);
+            echo str_replace('what’s next', '<span class="gradient-text-amber-800">what’s next</span>', $headline);
           } else {
             echo $headline;
           }
@@ -82,7 +82,7 @@
     </div>
 
     <div class="site-container hero-bottom">
-      <p><i class="fas fa-wand-magic-sparkles text-gold" aria-hidden="true"></i> Agriculture with purpose. Industry with possibility.</p>
+      <p><i class="fas fa-wand-magic-sparkles text-amber-800" aria-hidden="true"></i> Agriculture with purpose. Industry with possibility.</p>
       <a href="about.php">Meet FOREST LANKA <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
     </div>
   </section>
@@ -135,7 +135,7 @@
           </div>
           <div class="telemetry-live-footer">
             <span>Automated egg conveyor line 3 active</span>
-            <span class="text-gold">99.4% Grade A</span>
+            <span class="text-amber-800">99.4% Grade A</span>
           </div>
         </div>
 
@@ -175,7 +175,7 @@
           </div>
           <div class="telemetry-live-footer">
             <span>Oyster &amp; Shiitake flush cycle 2</span>
-            <span class="text-gold">Temp: 18.5°C</span>
+            <span class="text-amber-800">Temp: 18.5°C</span>
           </div>
         </div>
 
@@ -215,7 +215,7 @@
           </div>
           <div class="telemetry-live-footer">
             <span>Pellet durability index (PDI): 97.2%</span>
-            <span class="text-gold">ISO 22000 Ready</span>
+            <span class="text-amber-800">ISO 22000 Ready</span>
           </div>
         </div>
 
@@ -255,7 +255,7 @@
           </div>
           <div class="telemetry-live-footer">
             <span>South Korean Tech Partnership</span>
-            <span class="text-gold">Potable &amp; Food Grade</span>
+            <span class="text-amber-800">Potable &amp; Food Grade</span>
           </div>
         </div>
 
@@ -285,13 +285,13 @@
                 <span class="telemetry-stat-val">3.4<span class="telemetry-stat-unit">Tons CO₂e / Day</span></span>
               </div>
             </div>
-            <p class="text-xs text-gray-300">
+            <p class="text-xs text-gray-600">
               Poultry manure and agricultural chaff are directly channeled into the in-vessel composter to manufacture enriched organic fertilizer and seedling growing media, closing the agricultural loop completely without landfill waste.
             </p>
           </div>
           <div class="telemetry-live-footer">
             <span>Circular Loop Stage: Material Recovery Phase 03</span>
-            <span class="text-gold"><i class="fas fa-circle-check" aria-hidden="true"></i> Polpithigama Microgrid Sync Active</span>
+            <span class="text-amber-800"><i class="fas fa-circle-check" aria-hidden="true"></i> Polpithigama Microgrid Sync Active</span>
           </div>
         </div>
       </div>
@@ -410,25 +410,25 @@
       </div>
       <div class="value-chain-grid">
         <div class="value-step-card">
-          <div class="value-step-badge"><span>PHASE 01</span><i class="fas fa-arrow-right text-gold" aria-hidden="true"></i></div>
+          <div class="value-step-badge"><span>PHASE 01</span><i class="fas fa-arrow-right text-amber-800" aria-hidden="true"></i></div>
           <div class="value-step-icon value-step-icon--emerald"><i class="fas fa-seedling" aria-hidden="true"></i></div>
           <h3>Grow</h3>
           <p>Agricultural cultivation, smart layer farming and sustainable growing solutions.</p>
         </div>
         <div class="value-step-card">
-          <div class="value-step-badge"><span>PHASE 02</span><i class="fas fa-arrow-right text-gold" aria-hidden="true"></i></div>
+          <div class="value-step-badge"><span>PHASE 02</span><i class="fas fa-arrow-right text-amber-800" aria-hidden="true"></i></div>
           <div class="value-step-icon value-step-icon--amber"><i class="fas fa-industry" aria-hidden="true"></i></div>
           <h3>Create</h3>
           <p>Modern animal feed, molded paper packaging and value-added food ingredients.</p>
         </div>
         <div class="value-step-card">
-          <div class="value-step-badge"><span>PHASE 03</span><i class="fas fa-arrow-right text-gold" aria-hidden="true"></i></div>
+          <div class="value-step-badge"><span>PHASE 03</span><i class="fas fa-arrow-right text-amber-800" aria-hidden="true"></i></div>
           <div class="value-step-icon value-step-icon--teal"><i class="fas fa-recycle" aria-hidden="true"></i></div>
           <h3>Recover</h3>
           <p>A circular bio-approach transforming agricultural by-products into organic fertilizer.</p>
         </div>
         <div class="value-step-card">
-          <div class="value-step-badge"><span>PHASE 04</span><i class="fas fa-circle-check text-gold" aria-hidden="true"></i></div>
+          <div class="value-step-badge"><span>PHASE 04</span><i class="fas fa-circle-check text-amber-800" aria-hidden="true"></i></div>
           <div class="value-step-icon value-step-icon--blue"><i class="fas fa-globe" aria-hidden="true"></i></div>
           <h3>Connect</h3>
           <p>Reliable pipelines for local buyers, international trade and enterprise partners.</p>

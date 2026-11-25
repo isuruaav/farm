@@ -55,6 +55,7 @@ Image assignments and accessible descriptions are in `data/page-visuals.json`. I
 - `data/forms.json`: server field rules and select options; update these when changing forms.
 - `assets/css/tailwind-input.css`: Tailwind v4 CSS theme, explicit PHP/JavaScript source paths, and component imports.
 - `assets/css/styles.css`, `admin.css` and `design.css`: shared, staff and portfolio component styles; edit these source files.
+- `assets/css/light-theme.css`: shared daylight palette for public pages, forms, drawers and staff screens; imported after the component styles.
 - `assets/css/utilities.css`: the compiled production bundle, including Tailwind, shared styles, admin styles and scroll animations. All application pages load this bundle.
 - `package.json` and `package-lock.json`: pinned asset development dependencies and reproducible installation.
 - `assets/vendor/fontawesome/`: local icons and their original license.
@@ -76,6 +77,45 @@ Tailwind and `@tailwindcss/cli` are pinned to **4.3.5**; local icons use Font Aw
 
 The v4 browser baseline is Safari 16.4+, Chrome 111+ and Firefox 128+. See the [official upgrade guide](https://tailwindcss.com/docs/upgrade-guide) and [v4.3.5 release](https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.5).
 
+## Full-page screenshots
+
+Capture the complete height of every public page, every published product detail,
+the staff login/dashboard/editors, a demo request, the 404 page, and the form
+success/error screens:
+
+```powershell
+npm.cmd run screenshots
+```
+
+The command starts and stops its own local PHP server and a headless Chrome/Edge
+with a temporary browser profile. It requires Node.js 22+ and PHP on `PATH`
+(or set `PHP_BINARY` to its executable path). No extra npm packages or browser
+downloads are needed. Install Chrome or Edge if neither is available; for a custom
+browser installation, set `SCREENSHOT_BROWSER` to its executable path.
+
+Full-page PNGs are saved in `screenshots/<date-time>/desktop/` at 1440px wide and
+`screenshots/<date-time>/mobile/` at 390px wide. Open that run's `index.html` to
+browse previews and click through to the full images. `manifest.json` lists the
+routes, image dimensions, failed captures and any unloaded-image/JavaScript warnings.
+Timestamps in folder names use Asia/Colombo time.
+
+To capture only one size:
+
+```powershell
+npm.cmd run screenshots -- --desktop
+npm.cmd run screenshots -- --mobile
+```
+
+Current public products, project stages and website settings are read from the
+local database through a read-only connection. The capture server uses disposable
+storage with a temporary staff account and demo inquiries. Real customer requests,
+staff credentials and sessions are never copied into the capture data. If no local
+database exists, the normal JSON seed content is used. Temporary storage is removed
+when the command finishes, and generated screenshots are excluded from Git.
+Scroll animations are disabled and lazy images are loaded before capture so the
+whole page stays visible. These images cover page views; open menus, carts and
+other interactive states are not separately captured.
+
 ## Verification
 
 ```powershell
@@ -89,4 +129,4 @@ The HTTP checks start a short-lived PHP server with disposable isolated storage,
 
 For production SEO, set `FOREST_SITE_URL` to the full site base URL. `sitemap.xml` and `robots.txt` are served dynamically; the sitemap lists public pages and published product details. The local PHP router and Apache rules both support these routes.
 
-Browser visual testing was unavailable in the editing session. Responsive CSS, keyboard navigation, modal focus handling and reduced-motion support are implemented; perform a desktop/mobile browser review before public launch. The latest review is documented in `PROJECT_REVIEW.md`.
+The light theme was visually reviewed in Chrome at 1440px desktop and 390px mobile widths, including public pages, staff screens, product filters, the inquiry cart and assistant drawer. Form, authentication, catalog and security checks use isolated disposable storage. The earlier project scope review is documented in `PROJECT_REVIEW.md`.

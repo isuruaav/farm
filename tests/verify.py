@@ -88,6 +88,9 @@ def main():
                         target=ROOT/url.path
                         check(target.is_file(),f'{slug}: broken link {link}')
                 for form in doc.forms:
+                    if form['attrs'].get('id')=='ai-chat-form':
+                        check(form['attrs'].get('onsubmit')=='handleAiChatSubmit(event)',f'{slug}: local assistant handler missing')
+                        continue
                     check('data-inquiry' in form['attrs'],f'{slug}: form has no submission handler')
                     names=[field.get('name') for field in form['fields']]
                     check(all(names),f'{slug}: unnamed form field')

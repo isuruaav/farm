@@ -1,7 +1,7 @@
 <main id="main-content">
-    <div class="bg-forest-dark text-white py-16 relative page-intro page-intro--visual">
+    <div class="py-16 relative page-intro page-intro--visual">
       <div class="page-intro-layout max-w-7xl mx-auto px-4 relative z-10"><div class="page-intro-copy">
-        <div class="text-xs text-gold uppercase tracking-wider font-semibold mb-2 flex items-center gap-2">
+        <div class="text-xs text-emerald-700 uppercase tracking-wider font-semibold mb-2 flex items-center gap-2">
           <a href="index.php" class="hover:underline">Home</a>
           <i class="fas fa-chevron-right text-2xs"></i>
           <span>Partner Network</span>
@@ -10,7 +10,7 @@
           <span>Become Our Business Partner</span>
           
         </h1>
-        <p class="text-base sm:text-base text-emerald-100 max-w-3xl leading-relaxed">
+        <p class="text-base sm:text-base text-gray-600 max-w-3xl leading-relaxed">
           <span>
             FOREST LANKA actively collaborates with wholesale dealers, supermarket retail chains, hotel suppliers, exporters, outgrowers, distribution fleets, and technological partners across Sri Lanka and globally.
           </span>

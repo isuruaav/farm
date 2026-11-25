@@ -55,7 +55,7 @@ transform({ code: Buffer.from(read('assets/vendor/fontawesome/css/all.min.css'))
 
 assert.ok(layerOrder.indexOf('components') < layerOrder.indexOf('utilities'), 'Utility styles must override component defaults.');
 assert.ok(headingLayers.has('components'), 'Branded heading styles must stay in the component layer.');
-for (const utility of ['text-white','bg-forest','bg-gold','text-2xs','sm:grid-cols-2','lg:grid-cols-4','focus:ring-gold','shadow-xs']) {
+for (const utility of ['text-forest','bg-emerald-100','bg-gold','text-2xs','sm:grid-cols-2','lg:grid-cols-4','focus:ring-gold','shadow-xs']) {
   assert.equal(utilityLayers.get(utility), 'utilities', `Missing or incorrectly layered utility: ${utility}`);
 }
 for (const name of ['admin-body','request-detail','standalone-panel','scroll-reveal','is-pending','form-feedback','home-hero','industry-explorer','product-card','product-detail-layout','admin-tabs','editor-panel']) {

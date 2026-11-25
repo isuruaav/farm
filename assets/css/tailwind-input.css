@@ -4,6 +4,7 @@
 @import "./admin.css" layer(components);
 @import "./design.css" layer(components);
 @import "./imagery.css" layer(components);
+@import "./light-theme.css" layer(components);
 
 @source "../../views";
 @source "../../includes";

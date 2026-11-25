@@ -5,3 +5,4 @@
 /tests/runtime-*/
 __pycache__/
 *.log
+/screenshots/

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?= e($meta['description']) ?>">
-  <meta name="theme-color" content="#123f32">
+  <meta name="theme-color" content="#f0f7f2">
   <?php if ($page==='404'): ?><meta name="robots" content="noindex,nofollow"><?php endif; ?>
   <meta name="csrf-token" content="<?= e(csrf_token()) ?>">
   <meta property="og:title" content="<?= e($meta['title']) ?>">
@@ -20,9 +20,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/utilities.css?v=4.3.5-imagery">
+  <link rel="stylesheet" href="assets/css/utilities.css?v=4.3.5-light">
   <script type="application/json" id="product-catalog"><?= json_encode(catalog(), JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?></script>
-  <script src="assets/js/app.js?v=4" defer></script>
+  <script src="assets/js/app.js?v=5-light" defer></script>
   <script src="assets/js/scroll-reveal.js?v=2" defer></script>
   <script src="assets/js/experience.js?v=1" defer></script>
   <script type="application/ld+json"><?= json_encode(['@context'=>'https://schema.org','@type'=>'Organization','name'=>'FOREST LANKA','url'=>site_url(),'logo'=>site_url('assets/images/logo.jpg'),'telephone'=>$site['phone'],'email'=>$site['email'],'address'=>$site['address']],JSON_UNESCAPED_SLASHES|JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT) ?></script>

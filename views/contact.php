@@ -1,7 +1,7 @@
 <main id="main-content">
-    <div class="bg-forest-dark text-white py-16 relative page-intro page-intro--visual">
+    <div class="py-16 relative page-intro page-intro--visual">
       <div class="page-intro-layout max-w-7xl mx-auto px-4 relative z-10"><div class="page-intro-copy">
-        <div class="text-xs text-gold uppercase tracking-wider font-semibold mb-2 flex items-center gap-2">
+        <div class="text-xs text-emerald-700 uppercase tracking-wider font-semibold mb-2 flex items-center gap-2">
           <a href="index.php" class="hover:underline">Home</a>
           <i class="fas fa-chevron-right text-2xs"></i>
           <span>Official Inquiries</span>
@@ -10,7 +10,7 @@
           <span>Contact Us & Inquiry Desk</span>
           
         </h1>
-        <p class="text-base sm:text-base text-emerald-100 max-w-3xl leading-relaxed">
+        <p class="text-base sm:text-base text-gray-600 max-w-3xl leading-relaxed">
           <span>
             Share your product, project or partnership requirements with the FOREST LANKA team. Keep the reference number shown after submitting your inquiry so we can help you follow up.
           </span>
@@ -35,7 +35,7 @@
               <div class="space-y-4 text-xs text-gray-700">
                 <div class="flex items-start gap-3">
                   <div class="w-9 h-9 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0 text-base mt-0.5">
-                    <i class="fas fa-certificate text-gold"></i>
+                    <i class="fas fa-certificate text-emerald-700"></i>
                   </div>
                   <div>
                     <strong>Registration Number:</strong>
@@ -105,10 +105,10 @@
             
             <div class="bg-warmwhite p-4 rounded-3xl border border-gray-200 overflow-hidden shadow-xs">
               <h3 class="text-xs font-bold text-forest uppercase tracking-wider mb-2">Location Map (Polpithigama, Kurunegala)</h3>
-              <div class="w-full h-48 bg-emerald-950 rounded-2xl flex flex-col items-center justify-center text-emerald-200 text-center p-4 relative overflow-hidden">
-                <i class="fas fa-map-marked-alt text-4xl text-gold mb-2"></i>
-                <div class="font-bold text-xs text-white">FOREST LANKA Agro-Industrial Base</div>
-                <div class="text-2xs text-emerald-300"><?= e($site['address']) ?></div>
+              <div class="w-full h-48 bg-emerald-50 rounded-2xl flex flex-col items-center justify-center text-emerald-800 text-center p-4 relative overflow-hidden">
+                <i class="fas fa-map-marked-alt text-4xl text-emerald-700 mb-2"></i>
+                <div class="font-bold text-xs text-forest">FOREST LANKA Agro-Industrial Base</div>
+                <div class="text-2xs text-emerald-700"><?= e($site['address']) ?></div>
                 <a href="https://maps.google.com/?q=<?= rawurlencode($site['address']) ?>" target="_blank" rel="noopener noreferrer" class="mt-3 text-2xs bg-gold text-forest font-bold px-3 py-1 rounded-full hover:bg-white transition">
                   <i class="fas fa-external-link-alt mr-1"></i> Open in Google Maps
                 </a>
@@ -118,43 +118,43 @@
 
           
           <div class="lg:col-span-7">
-            <div class="bg-forest-dark text-white p-8 sm:p-10 rounded-3xl border-2 border-gold/40 shadow-2xl">
-              <div class="border-b border-emerald-800 pb-4 mb-6">
-                <h3 class="text-2xl font-black font-heading text-white">Send an Inquiry</h3>
-                <p class="text-base text-emerald-200 mt-1">Please specify your requirements below. Your request is saved securely for our team to review. Keep the reference number shown after submission.</p>
+            <div class="inquiry-surface p-8 sm:p-10 rounded-3xl border border-emerald-100 shadow-sm">
+              <div class="border-b border-emerald-100 pb-4 mb-6">
+                <h3 class="text-2xl font-black font-heading text-forest">Send an Inquiry</h3>
+                <p class="text-base text-emerald-800 mt-1">Please specify your requirements below. Your request is saved securely for our team to review. Keep the reference number shown after submission.</p>
               </div>
 
               <form class="dynamic-inquiry-form space-y-4" method="post" action="api/inquiries.php" data-inquiry="contact">
 <?php form_security("contact"); ?>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label for="contact-name" class="block text-xs font-semibold text-emerald-200 mb-1">Your Full Name *</label>
+                    <label for="contact-name" class="block text-xs font-semibold text-emerald-800 mb-1">Your Full Name *</label>
                     <input type="text" required placeholder="Mr. / Ms. Full Name" class="w-full text-xs p-3 rounded-lg bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="name" id="contact-name" maxlength="180" autocomplete="name">
                   </div>
                   <div>
-                    <label for="contact-company" class="block text-xs font-semibold text-emerald-200 mb-1">Company / Farm</label>
+                    <label for="contact-company" class="block text-xs font-semibold text-emerald-800 mb-1">Company / Farm</label>
                     <input type="text" placeholder="Company or farm name" class="w-full text-xs p-3 rounded-lg bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="company" id="contact-company" maxlength="180" autocomplete="organization">
                   </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label for="contact-country" class="block text-xs font-semibold text-emerald-200 mb-1">Country *</label>
+                    <label for="contact-country" class="block text-xs font-semibold text-emerald-800 mb-1">Country *</label>
                     <input type="text" required placeholder="Sri Lanka / Other Country" class="w-full text-xs p-3 rounded-lg bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="country" id="contact-country" maxlength="180" autocomplete="country-name">
                   </div>
                   <div>
-                    <label for="contact-email" class="block text-xs font-semibold text-emerald-200 mb-1">Email Address *</label>
+                    <label for="contact-email" class="block text-xs font-semibold text-emerald-800 mb-1">Email Address *</label>
                     <input type="email" required placeholder="name@domain.com" class="w-full text-xs p-3 rounded-lg bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="email" id="contact-email" maxlength="254" autocomplete="email">
                   </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label for="contact-phone" class="block text-xs font-semibold text-emerald-200 mb-1">Telephone Number *</label>
+                    <label for="contact-phone" class="block text-xs font-semibold text-emerald-800 mb-1">Telephone Number *</label>
                     <input type="tel" required placeholder="+94 7X XXX XXXX" class="w-full text-xs p-3 rounded-lg bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="phone" id="contact-phone" maxlength="32" autocomplete="tel">
                   </div>
                   <div>
-                    <label for="contact-inquiry_type" class="block text-xs font-semibold text-emerald-200 mb-1">Inquiry Type *</label>
+                    <label for="contact-inquiry_type" class="block text-xs font-semibold text-emerald-800 mb-1">Inquiry Type *</label>
                     <select required class="w-full text-xs p-3 rounded-lg bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="inquiry_type" id="contact-inquiry_type">
                       <option value="">Select Inquiry Classification</option>
                       <option value="retail_order">Retail Product Order</option>
@@ -169,7 +169,7 @@
                 </div>
 
                 <div>
-                  <label for="contact-industry" class="block text-xs font-semibold text-emerald-200 mb-1">Interested Product or Industry *</label>
+                  <label for="contact-industry" class="block text-xs font-semibold text-emerald-800 mb-1">Interested Product or Industry *</label>
                   <select required class="w-full text-xs p-3 rounded-lg bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="industry" id="contact-industry">
                     <option value="">Select Core Industry</option>
                     <option value="ind_poultry">01. Modern Smart Layer Poultry Farm (Fresh Eggs)</option>
@@ -184,7 +184,7 @@
                 </div>
 
                 <div>
-                  <label for="contact-message" class="block text-xs font-semibold text-emerald-200 mb-1">Message / Requirements *</label>
+                  <label for="contact-message" class="block text-xs font-semibold text-emerald-800 mb-1">Message / Requirements *</label>
                   <textarea rows="4" required placeholder="Please provide specific details such as target quantities, delivery timeframe, destination or custom requirements..." class="w-full text-xs p-3 rounded-lg bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="message" id="contact-message" maxlength="5000"></textarea>
                 </div>
 

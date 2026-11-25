@@ -76,39 +76,39 @@
 <div class="export-layout"><div class="export-copy"><p class="eyebrow">FOR INTERNATIONAL BUYERS &amp; TRADE PARTNERS</p><h2>Let your requirements<br>lead the conversation.</h2><p>Tell us your country, destination port, target quantity and packaging preferences. Our team reviews the request and discusses confirmed product availability, order minimums, documentation and freight arrangements individually.</p><div class="export-sector-list"><?php foreach ($sectors as $sector): ?><a href="products.php?category=<?= e($sector['category']) ?>" class="export-sector-link"><i class="fas <?= e($sector['icon']) ?>" aria-hidden="true"></i><span><strong><?= e($sector['shortName']) ?></strong><small><?= e($sector['focus']) ?></small></span></a><?php endforeach; ?></div><div class="project-context"><h3>A quotation comes first.</h3><p>Catalog details are indicative. Export quantities, samples, certifications, shipping terms and supply commitments require individual confirmation. No payment is collected through this form.</p></div></div><div class="export-form-panel"><p class="brand-eyebrow">START AN EXPORT INQUIRY</p><h2>What are you looking for?</h2><p>Provide as much detail as you can. A reference number is shown after your request has been saved.</p><form id="export-inquiry-form" class="space-y-3.5" method="post" action="api/inquiries.php" data-inquiry="export">
 <?php form_security("export"); ?>
                 <div>
-                  <label for="export-name" class="block text-xs font-semibold text-emerald-200 mb-1">Contact Person Name *</label>
+                  <label for="export-name" class="block text-xs font-semibold text-emerald-800 mb-1">Contact Person Name *</label>
                   <input type="text" required placeholder="Full Name" class="w-full text-xs p-2.5 rounded-sm bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="name" id="export-name" maxlength="180" autocomplete="name">
                 </div>
 
                 <div>
-                  <label for="export-company" class="block text-xs font-semibold text-emerald-200 mb-1">Company / Importer Name *</label>
+                  <label for="export-company" class="block text-xs font-semibold text-emerald-800 mb-1">Company / Importer Name *</label>
                   <input type="text" required placeholder="Corporate entity name" class="w-full text-xs p-2.5 rounded-sm bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="company" id="export-company" maxlength="180" autocomplete="organization">
                 </div>
 
                 <div class="grid grid-cols-2 gap-2">
                   <div>
-                    <label for="export-country" class="block text-xs font-semibold text-emerald-200 mb-1">Buyer Country *</label>
+                    <label for="export-country" class="block text-xs font-semibold text-emerald-800 mb-1">Buyer Country *</label>
                     <input type="text" required placeholder="e.g. UAE, Qatar, Maldives" class="w-full text-xs p-2.5 rounded-sm bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="country" id="export-country" maxlength="180" autocomplete="country-name">
                   </div>
                   <div>
-                    <label for="export-port" class="block text-xs font-semibold text-emerald-200 mb-1">Port of Destination</label>
+                    <label for="export-port" class="block text-xs font-semibold text-emerald-800 mb-1">Port of Destination</label>
                     <input type="text" placeholder="e.g. Jebel Ali, Malé" class="w-full text-xs p-2.5 rounded-sm bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="port" id="export-port" maxlength="180">
                   </div>
                 </div>
 
                 <div class="grid grid-cols-2 gap-2">
                   <div>
-                    <label for="export-email" class="block text-xs font-semibold text-emerald-200 mb-1">Email Address *</label>
+                    <label for="export-email" class="block text-xs font-semibold text-emerald-800 mb-1">Email Address *</label>
                     <input type="email" required placeholder="procurement@company.com" class="w-full text-xs p-2.5 rounded-sm bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="email" id="export-email" maxlength="254" autocomplete="email">
                   </div>
                   <div>
-                    <label for="export-phone" class="block text-xs font-semibold text-emerald-200 mb-1">WhatsApp / Phone *</label>
+                    <label for="export-phone" class="block text-xs font-semibold text-emerald-800 mb-1">WhatsApp / Phone *</label>
                     <input type="tel" required placeholder="+Country code..." class="w-full text-xs p-2.5 rounded-sm bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="phone" id="export-phone" maxlength="32" autocomplete="tel">
                   </div>
                 </div>
 
                 <div>
-                  <label for="export-industry" class="block text-xs font-semibold text-emerald-200 mb-1">Target Product Line *</label>
+                  <label for="export-industry" class="block text-xs font-semibold text-emerald-800 mb-1">Target Product Line *</label>
                   <select required class="w-full text-xs p-2.5 rounded-sm bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="industry" id="export-industry">
                     <option value="">Select Target Export Product</option>
                     <option value="shiitake_oyster">Dehydrated Shiitake & Gourmet Mushrooms</option>
@@ -121,17 +121,17 @@
                 </div>
 
                 <div>
-                  <label for="export-quantity" class="block text-xs font-semibold text-emerald-200 mb-1">Estimated Target Volume & Incoterms</label>
+                  <label for="export-quantity" class="block text-xs font-semibold text-emerald-800 mb-1">Estimated Target Volume & Incoterms</label>
                   <input type="text" placeholder="e.g. 5 Metric Tons, FOB Colombo or CIF Jebel Ali" class="w-full text-xs p-2.5 rounded-sm bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="quantity" id="export-quantity" maxlength="180">
                 </div>
 
-                <div class="flex items-center gap-2 pt-1 text-xs text-emerald-200">
+                <div class="flex items-center gap-2 pt-1 text-xs text-emerald-800">
                   <input type="checkbox" id="request-sample-check" class="rounded-sm text-emerald-600 focus:ring-gold" name="sample" maxlength="180">
                   <label for="export-message" for="request-sample-check">Request Product Lab Sample for Evaluation</label>
                 </div>
 
                 <div>
-                  <label for="export-message" class="block text-xs font-semibold text-emerald-200 mb-1">Commercial Specifications / Requirements</label>
+                  <label for="export-message" class="block text-xs font-semibold text-emerald-800 mb-1">Commercial Specifications / Requirements</label>
                   <textarea rows="2" placeholder="Custom packaging, certification requests, delivery schedules..." class="w-full text-xs p-2.5 rounded-sm bg-white text-charcoal border focus:ring-1 focus:ring-gold" name="message" id="export-message" maxlength="5000"></textarea>
                 </div>
 

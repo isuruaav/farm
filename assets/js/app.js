@@ -142,7 +142,7 @@ async function submitInquiry(event){
 }
 function filterCategory(category,button){
   activeCategory=category;
-  document.querySelectorAll('.prod-cat-btn').forEach(item=>{const active=item===button;item.setAttribute('aria-pressed',String(active));item.classList.toggle('bg-forest',active);item.classList.toggle('text-gold',active);item.classList.toggle('bg-gray-100',!active);item.classList.toggle('text-gray-700',!active);});applyProductFilters();
+  document.querySelectorAll('.prod-cat-btn').forEach(item=>{const active=item===button;item.setAttribute('aria-pressed',String(active));item.classList.toggle('bg-emerald-100',active);item.classList.toggle('text-forest',active);item.classList.toggle('bg-gray-100',!active);item.classList.toggle('text-gray-700',!active);});applyProductFilters();
 }
 function searchProducts(){applyProductFilters();}
 function applyProductFilters(){
@@ -154,7 +154,7 @@ function applyProductFilters(){
   const url=new URL(location.href);for(const[key,value]of Object.entries({q:query,category:activeCategory==='all'?'':activeCategory,sort:sort==='featured'?'':sort})){if(value)url.searchParams.set(key,value);else url.searchParams.delete(key);}history.replaceState(null,'',url);
 }
 function resetProductFilters(){document.getElementById('product-search-input').value='';document.getElementById('product-sort').value='featured';filterCategory('all',document.querySelector('.prod-cat-btn'));}
-function filterGallery(category,button){document.querySelectorAll('.gallery-filter-btn').forEach(item=>{const active=item===button;item.setAttribute('aria-pressed',String(active));for(const name of ['bg-forest','text-gold'])item.classList.toggle(name,active);for(const name of ['bg-gray-100','text-gray-700'])item.classList.toggle(name,!active);});document.querySelectorAll('.gallery-item').forEach(item=>item.hidden=category!=='all'&&item.dataset.cat!==category);}
+function filterGallery(category,button){document.querySelectorAll('.gallery-filter-btn').forEach(item=>{const active=item===button;item.setAttribute('aria-pressed',String(active));for(const name of ['bg-emerald-100','text-forest'])item.classList.toggle(name,active);for(const name of ['bg-gray-100','text-gray-700'])item.classList.toggle(name,!active);});document.querySelectorAll('.gallery-item').forEach(item=>item.hidden=category!=='all'&&item.dataset.cat!==category);}
 function openGalleryModal(src,caption){const image=document.getElementById('lightbox-img');const local=/^assets\/images\/[a-zA-Z0-9_./-]+$/.test(src)&&!src.includes('..');if(!image||(!local&&!/^https:\/\/images\.unsplash\.com\//.test(src)))return;image.src=src;image.alt=caption||'Industry photograph';document.getElementById('lightbox-caption').textContent=caption||'';const dialog=document.getElementById('gallery-lightbox-modal');dialog?.setAttribute('aria-label','Industry photo viewer');showDialog(dialog);}
 function closeGalleryModal(){hideDialog(document.getElementById('gallery-lightbox-modal'));}
 
@@ -278,7 +278,7 @@ function handleAiChatSubmit(event) {
   let matched = aiKnowledge.find(item => item.triggers.some(t => lower.includes(t)));
   if (!matched) {
     matched = {
-      answer: '<strong>Forest Lanka 2027 Copilot:</strong> Thank you for your inquiry! Forest Lanka connects 8 integrated agro-industrial sectors in Polpithigama, Sri Lanka. You can browse our <a href="products.php" class="text-gold underline">Product Catalog</a>, request an <a href="export.php" class="text-gold underline">Export Quotation</a>, or connect directly with our trade team on <a href="https://wa.me/94719740798" target="_blank" class="text-gold underline">WhatsApp (+94 71 974 0798)</a>.'
+      answer: '<strong>Forest Lanka 2027 Copilot:</strong> Thank you for your inquiry! Forest Lanka connects 8 integrated agro-industrial sectors in Polpithigama, Sri Lanka. You can browse our <a href="products.php" class="text-emerald-700 underline">Product Catalog</a>, request an <a href="export.php" class="text-emerald-700 underline">Export Quotation</a>, or connect directly with our trade team on <a href="https://wa.me/94719740798" target="_blank" class="text-emerald-700 underline">WhatsApp (+94 71 974 0798)</a>.'
     };
   }
 
